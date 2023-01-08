@@ -74,6 +74,9 @@ wk.register({
   -- See `:help K` for why this keymap
   K = { vim.lsp.buf.hover, 'Hover Documentation' },
 
+  ['<TAB>'] = { '<cmd>bn<cr>', 'Next buffer' },
+  ['<S-TAB>'] = { '<cmd>bp<cr>', 'Previous buffer' },
+
   ['['] = {
     d = { vim.diagnostic.goto_prev, 'Previous diagnostic' },
     g = { '<cmd>Gitsigns prev_hunk<cr>', 'Previous hunk' }
@@ -88,7 +91,7 @@ wk.register({
 })
 
 wk.register({
-  ['<C-h>'] = { vim.lsp.buf.signature_help, 'Signature Documentation' },
+  ['<C-k>'] = { vim.lsp.buf.signature_help, 'Signature Documentation' },
 }, {
   mode = 'i'
 })
