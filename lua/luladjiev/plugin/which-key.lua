@@ -51,6 +51,8 @@ wk.register({
 
   h = { '<cmd>Telescope help_tags<cr>', 'Search Help' },
 
+  p = { '<cmd>Telescope project<cr>', 'Projects' },
+
   u = { '<cmd>UndotreeToggle<cr>', 'Undotree' },
 
   ['*'] = { '<cmd>Telescope grep_string<cr>', 'Search current word' },

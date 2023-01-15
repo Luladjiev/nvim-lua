@@ -63,6 +63,9 @@ require('lazy').setup({
   -- Fuzzy Finder Algorithm which dependencies local dependencies to be built. Only load if `make` is available
   { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make', enabled = vim.fn.executable 'make' == 1 },
 
+  -- Projects manager
+  { 'nvim-telescope/telescope-project.nvim' },
+
   -- Undo on steroids
   { 'mbbill/undotree' },
 
